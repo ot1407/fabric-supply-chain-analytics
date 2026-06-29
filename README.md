@@ -35,9 +35,10 @@ sql/
 
 - ✅ Workspace created
 - ✅ Lakehouse created
-- ✅ Bronze layer created
-- ⏳ Silver layer
-- ⏳ Gold layer
-- ⏳ Warehouse
+- ✅ Bronze layer completed
+- ✅ Silver layer completed
+- ✅ Gold layer completed
+- ✅ Task Flow documented
+- ⏳ Semantic Model
 - ⏳ Power BI Dashboard
 

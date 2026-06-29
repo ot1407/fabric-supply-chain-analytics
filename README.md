@@ -48,9 +48,6 @@ sql/
 
 ![Task Flow](screenshots/task_flow.png)
 
-## Lakehouse Structure
-
-![Lakehouse](screenshots/lakehouse_structure.png)
 
 ## Gold Layer Output
 

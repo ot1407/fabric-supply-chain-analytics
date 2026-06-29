@@ -42,3 +42,17 @@ sql/
 - ⏳ Semantic Model
 - ⏳ Power BI Dashboard
 
+---
+
+## Architecture
+
+![Task Flow](screenshots/task_flow.png)
+
+## Lakehouse Structure
+
+![Lakehouse](screenshots/lakehouse_structure.png)
+
+## Gold Layer Output
+
+![Gold Output](screenshots/gold_delivery_performance_table.png)
+

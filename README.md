@@ -74,5 +74,5 @@ Business-oriented aggregated tables:
 ---
 
 ## 📊 Gold Layer Example
+![Gold Output](screenshots/gold_layer.png)
 
-![Gold Output](screenshots/gold_delivery_performance_table.png)

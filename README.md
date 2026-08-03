@@ -4,7 +4,7 @@
 
 This project demonstrates an end-to-end Supply Chain Analytics solution built using Microsoft Fabric and the DataCo Smart Supply Chain dataset.
 
-The solution follows the Medallion Architecture (Bronze, Silver, Gold) to transform raw supply chain data into business-ready analytics for reporting and decision-making.
+The solution follows the Medallion Architecture (Bronze, Silver, Gold) and implements a Star Schema semantic model to transform raw supply chain data into analytics-ready datasets for business reporting and decision-making.
 
 ---
 
@@ -15,15 +15,16 @@ The solution follows the Medallion Architecture (Bronze, Silver, Gold) to transf
 - Lakehouse
 - PySpark
 - SQL
-- Power BI
+- Power BI Semantic Model
 - Medallion Architecture
+- Star Schema
 - GitHub
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 architecture/
 docs/
 notebooks/
@@ -40,8 +41,9 @@ sql/
 - ✅ Bronze Layer (Raw Data)
 - ✅ Silver Layer (Data Cleaning & Standardization)
 - ✅ Gold Layer (Business Marts)
-- ⏳ Semantic Model
-- ⏳ Power BI Dashboard
+- ✅ Star Schema
+- ✅ Direct Lake Semantic Model
+- ⏸ Power BI Dashboard (Not included in this project)
 
 ---
 
@@ -52,7 +54,7 @@ sql/
 
 ### Silver
 - Data cleansing
-- Column standardization
+- Data standardization
 - Business-ready detailed dataset
 
 ### Gold
@@ -67,12 +69,37 @@ Business-oriented aggregated tables:
 
 ---
 
-## 📸 Architecture
+## ⭐ Star Schema
+
+The analytical model includes the following tables:
+
+### Fact Table
+- fact_orders
+
+### Dimension Tables
+- dim_customer
+- dim_product
+- dim_date
+- dim_location
+- dim_market
+- dim_shipping
+
+The semantic model is built using a **Direct Lake Semantic Model** with one-to-many relationships following Star Schema best practices.
+
+---
+
+## 📸 Medallion Architecture
 
 ![Task Flow](screenshots/task_flow.png)
 
 ---
 
-## 📊 Gold Layer Example
-![Gold Output](screenshots/gold_layer.png)
+## ⭐ Semantic Model
 
+![Star Schema](screenshots/starschema.png)
+
+---
+
+## 📊 Gold Layer Example
+
+![Gold Output](screenshots/gold_layer.png)
